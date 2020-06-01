@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.lambda.spark">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <dist:module dist:instant="true" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        >
+        <activity android:name=".Chatbot" />
+        <activity android:name=".ProfileActivity"/>
+        <activity android:name=".ProductOffers"/>
+        <activity android:name=".ProductPop" android:theme="@style/AppTheme.CustomTheme"/>
+        <activity android:name=".ProductScan"/>
+        <activity android:name=".SignInFragment" />
+        <activity android:name=".ShoppingList"/>
+        <activity android:name=".ShopNav"/>
+        <activity android:name=".ScanActivity"></activity>
+
+<!--        <activity android:name=".registerActivity" />-->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <activity android:name=".NavigationMap"/>
+
+        <activity
+            android:name=".HomeActivity"
+            android:label="HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- <activity android:name=".MainActivity"> -->
+        <activity
+            android:name=".registerActivity"
+            android:screenOrientation="fullSensor" />
+        <activity android:name=".PreTimer"/>
+        <activity android:name=".BillingTimer" android:theme="@style/AppTheme.CustomTheme">
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="fullSensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ChatbotActivity"/>
+
+        <uses-library android:name="com.google.android.maps" />
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+
+    </application>
+
+</manifest>
+
+

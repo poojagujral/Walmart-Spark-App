@@ -1,0 +1,116 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_navigation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:background="@drawable/blue_background"
+    tools:context="com.lambda.spark.NavigationMap">
+
+
+    <Spinner
+        android:id="@+id/dropdown"
+        android:layout_width="414dp"
+        android:layout_height="46dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:entries="@array/section_arrays"
+        android:prompt="@string/section_prompt"
+        android:spinnerMode="dialog"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/nav_reco_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginLeft="122dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginRight="122dp"
+        android:text="Recommended For You"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/map" />
+
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="473dp"
+        android:layout_marginTop="48dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="1.0"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent">
+
+
+    </fragment>
+
+    <ImageView
+        android:id="@+id/nav_reco_img1"
+        android:layout_width="65dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="120dp"
+        android:src="@drawable/recotext1"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/nav_reco_tv"
+        map:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/nav_reco_img2"
+        android:layout_width="65dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="120dp"
+        android:src="@drawable/recotext2"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toStartOf="@+id/nav_reco_img3"
+        map:layout_constraintHorizontal_bias="0.469"
+        map:layout_constraintStart_toEndOf="@+id/nav_reco_img1"
+        map:layout_constraintTop_toBottomOf="@+id/nav_reco_tv"
+        map:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/nav_reco_img3"
+        android:layout_width="65dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="121dp"
+        android:src="@drawable/recotext3"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toStartOf="@+id/nav_reco_img4"
+        map:layout_constraintTop_toBottomOf="@+id/nav_reco_tv"
+        map:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/nav_reco_img4"
+        android:layout_width="65dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="125dp"
+        android:src="@drawable/recotext4"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/nav_reco_tv"
+        map:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>

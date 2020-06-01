@@ -1,0 +1,52 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lambda.spark.NavigationMap" >
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView"-->
+    <!--        android:layout_width="fill_parent"-->
+    <!--        android:layout_height="fill_parent"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:text="TextView" />-->
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="vertical">
+
+        <!--        <Button-->
+        <!--            android:id="@+id/next_button"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_centerHorizontal="true"-->
+        <!--            android:text="Check" />-->
+
+
+        <!--        <Button-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="right|bottom"-->
+        <!--            android:layout_marginTop="1300dp"-->
+        <!--            android:padding="10dp"-->
+        <!--            android:paddingRight="10dp"-->
+        <!--            android:text="Demo Button" />-->
+
+
+    </fragment>
+
+<!--    <Spinner-->
+<!--        android:id="@+id/dropdown"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@android:drawable/btn_dropdown"-->
+<!--        android:spinnerMode="dialog"-->
+<!--        android:entries="@array/section_arrays"-->
+<!--        android:prompt="@string/section_prompt"-->
+<!--        tools:ignore="MissingConstraints" />-->
+</FrameLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <com.camerakit.CameraKitView
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:camera_facing="back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/photoButton"
+        android:layout_width="201dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/buttonshape"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:fontFamily="@font/gotham"
+        android:text="Scan My Product"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!--    <TextView-->
+<!--        android:id="@+id/nav_reco_tv"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="100dp"-->
+<!--        android:layout_marginLeft="100dp"-->
+<!--        android:layout_marginTop="60dp"-->
+<!--        android:layout_marginEnd="101dp"-->
+<!--        android:layout_marginRight="101dp"-->
+<!--        android:text="Recommended For You"-->
+<!--        android:textColor="@color/colorPrimaryDark"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/photoButton" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/nav_reco_img1"-->
+<!--        android:layout_width="72dp"-->
+<!--        android:layout_height="76dp"-->
+<!--        android:layout_marginStart="24dp"-->
+<!--        android:layout_marginLeft="24dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:src="@drawable/product_img5"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/nav_reco_img2"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/nav_reco_tv" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/nav_reco_img2"-->
+<!--        android:layout_width="94dp"-->
+<!--        android:layout_height="72dp"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginTop="21dp"-->
+<!--        android:layout_marginBottom="12dp"-->
+<!--        android:src="@drawable/product_img6"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/nav_reco_imgname2"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/nav_reco_img1"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/nav_reco_tv" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/nav_reco_img3"-->
+<!--        android:layout_width="93dp"-->
+<!--        android:layout_height="69dp"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        android:layout_marginBottom="12dp"-->
+<!--        android:src="@drawable/product_img7"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/nav_reco_imgname3"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/nav_reco_img2"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/nav_reco_tv" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/nav_reco_img4"-->
+<!--        android:layout_width="82dp"-->
+<!--        android:layout_height="68dp"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:layout_marginRight="16dp"-->
+<!--        android:layout_marginBottom="12dp"-->
+<!--        android:src="@drawable/scan_reco_img4"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/nav_reco_imgname4"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/nav_reco_img3"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/nav_reco_tv" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/nav_reco_imgname1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginEnd="4dp"-->
+<!--        android:layout_marginRight="4dp"-->
+<!--        android:layout_marginBottom="54dp"-->
+<!--        android:text="BoAt Speakers "-->
+<!--        android:textColor="	#800000"-->
+<!--        android:textSize="14sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/nav_reco_imgname2"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/nav_reco_img1"-->
+<!--        app:layout_constraintVertical_bias="0.0" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/nav_reco_imgname2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:layout_marginRight="16dp"-->
+<!--        android:text="Chanel Perfume"-->
+<!--        android:textColor="	#800000"-->
+<!--        android:textSize="14sp"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/nav_reco_imgname3"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/nav_reco_img2" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/nav_reco_imgname3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginLeft="16dp"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        android:text="Vegan Milk"-->
+<!--        android:textColor="	#800000"-->
+<!--        android:textSize="14sp"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/nav_reco_imgname2"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/nav_reco_img3" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/nav_reco_imgname4"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="24dp"-->
+<!--        android:layout_marginLeft="24dp"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        android:text="Latest Couch"-->
+<!--        android:textColor="	#800000"-->
+<!--        android:textSize="14sp"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/nav_reco_imgname3"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/nav_reco_img4" />-->
+
+
+</android.support.constraint.ConstraintLayout>
